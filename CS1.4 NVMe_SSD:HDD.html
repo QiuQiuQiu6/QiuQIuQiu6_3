@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <!---Google page-->
+    <head>
+        <title>CS first assignment/NVMe</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="mystle.css">
+        <style>
+        /*边框*/
+            p.one{
+                border: 1px solid rgb(85, 82, 82);
+            }
+        /*指定填充*/
+            p.padding{
+                padding-top:30px;
+                padding-bottom: 30px;
+                padding-right: 50px;
+                padding-left: 50px;
+                background-color: rgb(215, 195, 180);
+            }
+        /*区域划分*/
+            body{
+                margin: 0;
+            }
+            /*内容划分*/
+            .header{
+                background-color: #f1f1f1;
+                text-align:center;
+            }
+            .bottomer{
+                text-align: center;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+            } 
+            .columnone{
+                    float: left;
+                    width: 100%
+                }
+            .columntwo{
+                margin-left: 150px;
+                
+            }
+            .columntop{
+                margin-top: 95px;
+                margin-left: 150px;
+                
+            }
+
+            /*导航条*/
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(56, 56, 56);
+            }
+            /*导航链接*/
+            .topnav a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /*链接-修改字颜色*/
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black
+            }
+            /*相等列*/
+            .column{
+                float:left;
+                width: 50%;
+            }
+
+        /*响应式布局-小于600px时改为上下布局*/
+            @media screen and (max-width : 1335px){
+                .column{
+                    width: 100%;
+                }   
+            }
+
+
+        /*字*/
+            p{
+                text-align: left;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            /* for the title of the web */
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+            }
+            /* the subheading*/
+            h2{
+                text-align: center;
+                font-family:'Times New Roman', Times, serif;
+                font-size: 30px;
+            }
+            h3{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+            h4{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 23px;
+            }
+            h5{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            h6{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div class="header">
+        <h1>Computer Architecture Assignment</h1>
+        <h2>-NVMe-</h2>
+        <h3>&</h3>
+        <h2>-HDD/SSD-</h2>
+    </div>
+
+    <p class="padding"> Introduction:
+        <br>NVMe stand for Non-Volatile Memory Expres. Is a host controller interface and storage protocol. Designed to speed data transfer between enterprise and customer systems. 
+        <br>A computer hard disk drive, also known as an HDD, is a non-volatile data storage device.
+        <br>An SSD, or solid-state drive, is a type of storage device used in computers. Solid state drives replace the traditional hard disk drive (HDD) in a computer and perform the same basic functions as a hard disk drive.
+    </p>
+
+    <div class="topnav">
+        <a href="#1">NVMe</a>
+        <a href="#2">HDD/SSD</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+        <h3><a id="1">NVMe</a></h3>
+            <p class="columntwo">NVMe saves time. Unlike protocols designed in the days of mechanical hard drives, NVMe not only leverages solid state storage, but also today's multi-core CPUs and gigabytes of memory. NVMe storage also leverages a streamlined command set to efficiently parse and process data.</p>
+            <h4 class="columntwo">The difference between NVMe and SSD</h4>
+            <p class="columntwo">An SSD is a secondary storage device that uses integrated circuits to do its job, while NVMe is an interface for accessing stored data. NVMe is much faster than SSDs.</p>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <div class="columntop">
+            <img src="https://images.idgesg.net/images/article/2018/04/ssd-970-prolevo_family-ver1-100755677-large.jpg" width="430" height="310" alt="NVMe"/>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="row">
+        <div class="column">
+            <h3><a id="2">HDD/SSD</a></h3>
+                <p class="columntwo">HDD is a non-volatile means that the storage device retains the stored data when it is turned off. All computers need a storage device.</p>
+                <p class="columntwo">Hard disks are flat, round plates made of aluminum or glass coated with magnetic material. Hard disks in personal computers can store terabytes (trillions of bytes) of information.</p>
+                <p class="columntwo">SSD is a non-volatile storage media stores persistent data on solid-state flash memory.</p>
+                <p class="columntwo">Solid state drives function similarly to hard drives, but with different technology. Like a USB drive, an SSD uses flash memory to store data that is accessed digitally. A hard disk drive uses a rotating platter and an arm that moves across the platter to read each portion of the data.</p>
+        </div>
+
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <div class="columntop">
+                <img src="https://www.backblaze.com/blog/wp-content/uploads/2018/03/hdd_vs_ssd_bz.png" width="500" height="350" alt="A picture for HDD and SSD."/>
+            </div>
+        </div>
+    </div>
+    
+    
+    </body>
+</html>
